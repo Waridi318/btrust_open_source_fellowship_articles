@@ -104,13 +104,13 @@ What I found most interesting is how these different components interact. Unders
 
 These are the primary resources from the [Chaincode Bitcoin Protocol Development Seminar](https://chaincode.gitbook.io/seminars/bitcoin-protocol-development/welcome-to-the-bitcoin-protocol) that informed this article.
 
-**Week 1 — Bitcoin Foundations**
+**Module 1 — Bitcoin Foundations**
 - [Bitcoin Whitepaper](https://chaincode.com/bitcoin.pdf) — Satoshi Nakamoto
 - [Bitcoin's Academic Pedigree](https://queue.acm.org/detail.cfm?id=3136559) — Narayanan & Clark
 - [The Incomplete History of Bitcoin Development](https://b10c.me/blog/004-the-incomplete-history-of-bitcoin-development/) — b10c
 - [Security Models with John Newbery](https://btctranscripts.com/chaincode-residency/2019-06-17-john-newbery-security-models) — Chaincode Residency transcript
 
-**Week 2 — SegWit**
+**Module 2 — SegWit**
 - [What is SegWit?](https://bitcoinmagazine.com/guides/what-is-segwit) — Bitcoin Magazine
 - [SegWit in Mastering Bitcoin](https://github.com/bitcoinbook/bitcoinbook/blob/develop/ch06_transactions.adoc#segregated-witness) — Andreas Antonopoulos
 - [SegWit Benefits](https://bitcoincore.org/en/2016/01/26/segwit-benefits/) — Bitcoin Core
