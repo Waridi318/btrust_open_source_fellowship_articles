@@ -34,7 +34,7 @@ This is an important part of understanding how users can interact with Bitcoin w
 
 We also discussed what can be described as a circular dependency within Bitcoin's design.
 
-A secure ledger requires miners to maintain and secure the network. Miners need an incentive to perform this work. That incentive comes through block rewards and transaction fees. For the rewards to have value, however, the underlying currency needs to be valuable and trusted.
+A secure ledger depends on two distinct roles: miners who expend computational work to order transactions and extend the chain and full nodes that independently validate every block and transaction against Bitcoin's consensus rules. Miners need an incentive to perform this work. That incentive comes through block rewards and transaction fees. For the rewards to have value, however, the underlying currency needs to be valuable and trusted.
 
 This creates a loop where the security of the ledger supports the value of the currency while the value of the currency provides an incentive to secure the ledger.
 
