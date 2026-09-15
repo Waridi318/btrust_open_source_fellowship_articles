@@ -10,7 +10,7 @@ Bitcoin blocks are capped at roughly 1 MB of transaction data. Miners pick the h
 
 ## The Core Idea: Off-Chain State, On-Chain Settlement
 
-Instead of putting every payment on-chain, Lightning locks funds in a single on-chain transaction, then lets two parties exchange payments freely off-chain. The blockchain sees only two transactions: one to open the channel, one to close it, no matter how many payments happened in between.
+Instead of putting every payment on-chain, Lightning locks funds in a single on-chain transaction, then lets two parties exchange payments freely off-chain. In the simplest case, the blockchain sees two channel transactions: one to open the channel and one to close it, regardless of how many payments happen in between.
 
 The Bitcoin blockchain is not a cashier processing every purchase. It is a court you appeal to only when you need to settle up or resolve a dispute.
 
@@ -49,7 +49,7 @@ Alice and Bob generate fresh key pairs, share public keys and build new commitme
 
 ![State Update and Revocation](state_update_revocation-1.png)
 
-This repeats for every payment: new keys, new commitment transactions, revoke the old state, move forward. No on-chain activity required.
+This repeats for every payment: the channel moves to a new commitment state, the corresponding per-commitment secrets are updated and the previous state is revoked. Once a state is revoked, broadcasting it allows the counterparty to use the revocation mechanism to claim the funds. The channel can continue updating without any on-chain activity.
 
 ---
 
